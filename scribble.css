@@ -1,0 +1,51 @@
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #1a1a1a;
+      margin: 0;
+}
+
+.scribble-text-container {
+      position: relative;
+}
+
+.scribble-text {
+      font-size: 4em;
+      font-family: 'Courier New', Courier, monospace;
+      color: #fff;
+      position: relative;
+      text-shadow:
+            1px 1px #ff7b7b,
+            -1px -1px #ff7b7b,
+            2px 2px #00e5ff,
+            -2px -2px #00e5ff;
+      animation: scribble 2s infinite;
+}
+
+@keyframes scribble {
+      0% {
+            text-shadow:
+                  1px 1px #ff7b7b,
+                  -1px -1px #ff7b7b,
+                  2px 2px #00e5ff,
+                  -2px -2px #00e5ff;
+      }
+
+      50% {
+            text-shadow:
+                  2px -2px #ffb3b3,
+                  -2px 2px #ffb3b3,
+                  3px -3px #33fffc,
+                  -3px 3px #33fffc;
+      }
+
+      100% {
+            text-shadow:
+                  1px 1px #ff7b7b,
+                  -1px -1px #ff7b7b,
+                  2px 2px #00e5ff,
+                  -2px -2px #00e5ff;
+      }
+}
